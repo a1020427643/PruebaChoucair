@@ -40,7 +40,7 @@ private WebDriver driver;
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		searchBox.click();
 		searchBox.clear();
-		searchBox.sendKeys("k2haesfsdddddcore@gmail.com");
+		searchBox.sendKeys("k2haesfsdfddddcore@gmail.com");
 		driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 		searchBox.submit();
 		
@@ -161,38 +161,7 @@ private WebDriver driver;
 	
 
 		
-		/*  WebElement searchBox = driver.findElement(By.name("q"));
-		searchBox.clear();
-		searchBox.sendKeys("quality-stream Introducción a la Automatización de Pruebas de Software");
-		searchBox.submit();
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-		assertEquals("quality-stream Introducción a la Automatización de Pruebas de Software - Google Search",driver.getTitle());
-	}
-	
-	/*@Test void localizadores() {
-		 
-		By locator = By.id("id_del_elemento");
 		
-		By locator_name = By.name("name_elemnt");
-		
-		By locator_className = By.className("clase_elemento");
-		
-		By locator_tagName = By.tagName("tag");
-		
-		By locator_linktext = By.linkText("texto_link");
-		
-		By locator_partialLinkText = By.partialLinkText("parte_texto");
-		
-		By locator_cssSelector = By.cssSelector("input[name='q']");
-		
-		By locator_Xpath = By.xpath("//input[@name='q']");
-		
-		// JavaScript
-		
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		 WebElement searchBox = (WebElement)js.executeScript("return document.getElementsByName('q')[0]");
-		
-	}*/
 	
 	@After
 	public void tearDown() {
